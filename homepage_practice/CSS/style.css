@@ -1,0 +1,150 @@
+
+header {
+    height: 65px;
+    background-color:rgba(0,0,20,0.95);
+}
+.header-left {
+    float:left;
+    
+}
+
+.header-logo {
+    width:138px;
+    margin-right:50px;
+}
+
+.header-right {
+    float:right;
+    background-color:rgba(136, 135, 155, 0.3);
+    transition:all 0.5s;
+}
+
+.header-right:hover {
+    background-color:rgba(255,255,255,0.5);
+}
+
+.header-right a {
+    line-height:65px;
+    padding:0px 25px;
+    color:white;
+    display:block;
+    
+}
+
+body {
+
+}
+
+footer {
+
+}
+
+.container {
+    width:1170px;
+    padding:0px 15px;
+    margin:0 auto;
+}
+
+.top-wrapper {
+    padding:180px 0px 180px 0px;
+    background-image:url('../images/ws2.png');
+    background-size: cover;
+    color:white;
+    text-align:center;
+}
+
+h1 {
+    font-size:45px;
+    letter-spacing:2px;
+    opacity:0.9;
+    background-color:rgb(70, 70, 70);
+    border-radius:10px;
+}
+
+.top-wrapper p {
+    opacity:0.9;
+}
+
+.btn {
+    padding:8px 24px;
+    color:white;
+    display:inline-block;
+    opacity:0.85;
+    border-radius:10px;
+}
+
+.btn:hover {
+    opacity:1;
+}
+
+.signup {
+    background-color:#239b76;
+}
+
+.instagram {
+    background-color:#b860c0;
+    margin-right:10px;
+}
+
+.X {
+    background-color:#55acee;
+}
+
+.btn-wrapper {
+    margin: 20px 0px;
+}
+
+.btn-wrapper p {
+    margin:10px 0px;
+}
+
+.fa-brands {
+    margin-right:5px;
+}
+
+.fa-github {
+    margin:50px 21%;
+    color:black;
+}
+
+.heading {
+    text-align: center;
+}
+
+
+.message {
+    font-size: 30px;
+    color:black;
+    background-color: #71a9f1;
+    border-radius: 10px;
+    padding:10px 15px;
+    margin-left:25px;
+}
+
+footer {
+    height:200px;
+    background-color:rgba(0,0,20,0.95);
+    margin-top:50px;
+}
+
+.footer-left {
+    float:left;
+    margin:10px 30px;
+}
+
+.footer-left a{
+    font-size:50px;
+    color:white;
+}
+
+.footer-right {
+    float:right;
+    color:white;
+    margin:10px 30px;
+}
+
+li {
+    font-size:larger;
+    padding-bottom:30px;
+    list-style: none;
+}
