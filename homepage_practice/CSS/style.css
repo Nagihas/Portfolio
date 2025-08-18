@@ -1,7 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 
 header {
     height: 65px;
     background-color:rgba(0,0,20,0.95);
+    position:fixed;
+    top:0px;
+    width:100%;
+    z-index:10;
 }
 .header-left {
     float:left;
@@ -9,7 +19,7 @@ header {
 }
 
 .header-logo {
-    width:138px;
+    width:141px;
     margin-right:50px;
 }
 
@@ -31,16 +41,9 @@ header {
     
 }
 
-body {
-
-}
-
-footer {
-
-}
-
 .container {
-    width:1170px;
+    max-width:1170px;
+    width:100%;
     padding:0px 15px;
     margin:0 auto;
 }
@@ -48,7 +51,7 @@ footer {
 .top-wrapper {
     padding:180px 0px 180px 0px;
     background-image:url('../images/ws2.png');
-    background-size: cover;
+    background-size:cover;
     color:white;
     text-align:center;
 }
@@ -91,26 +94,45 @@ h1 {
 }
 
 .btn-wrapper {
-    margin: 20px 0px;
+    margin: 1% 0px;
 }
 
 .btn-wrapper p {
-    margin:10px 0px;
-}
-
-.fa-brands {
-    margin-right:5px;
+    margin: 20px 0px;
 }
 
 .fa-github {
-    margin:50px 21%;
+    margin:30px -20px;
     color:black;
+    text-decoration: underline;
 }
 
-.heading {
+.link-box span {
+    font-size: 150px;
+    text-decoration: underline;
+}
+
+.link-box a {
+    color:black;
+    text-decoration: none;
+}
+
+.link-wrapper {
     text-align: center;
 }
 
+.message-wrapper {
+    margin-top:20px;
+    
+}
+
+.message-section {
+    text-align: center;
+}
+
+h2 {
+    padding-bottom:10px
+}
 
 .message {
     font-size: 30px;
@@ -118,11 +140,22 @@ h1 {
     background-color: #71a9f1;
     border-radius: 10px;
     padding:10px 15px;
-    margin-left:25px;
+    box-shadow: 0 7px;
+}
+
+.message-section p {
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+.message:active {
+    box-shadow:none;
+    position:relative;
+    top:6px;
 }
 
 footer {
-    height:200px;
+    height:150px;
     background-color:rgba(0,0,20,0.95);
     margin-top:50px;
 }
@@ -147,4 +180,8 @@ li {
     font-size:larger;
     padding-bottom:30px;
     list-style: none;
+}
+
+@media(max-width:1000px) {
+    
 }
