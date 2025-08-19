@@ -6,25 +6,29 @@
 
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 65px;
     background-color:rgba(0,0,20,0.95);
     position:fixed;
     top:0px;
     width:100%;
     z-index:10;
-}
-.header-left {
-    float:left;
     
 }
 
 .header-logo {
-    width:141px;
-    margin-right:50px;
+    display:flex;
+    align-items:center;
+    height:65px;
+    width:140px;
 }
 
 .header-right {
-    float:right;
+    display:flex;
+    gap:20px;
+    margin-left:auto;
     background-color:rgba(136, 135, 155, 0.3);
     transition:all 0.5s;
 }
@@ -37,9 +41,17 @@ header {
     line-height:65px;
     padding:0px 25px;
     color:white;
-    display:block;
-    
+    display:inline-block;
+    text-decoration:none;
 }
+
+header::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+
 
 .container {
     max-width:1170px;
@@ -62,8 +74,13 @@ h1 {
     opacity:0.9;
     background-color:rgb(70, 70, 70);
     border-radius:10px;
+    margin-bottom:20px;
+    padding:10px;
 }
 
+.hero-section p {
+    margin-bottom:10px;
+}
 .top-wrapper p {
     opacity:0.9;
 }
@@ -81,6 +98,7 @@ h1 {
 }
 
 .signup {
+    margin-top:15px;
     background-color:#239b76;
 }
 
@@ -182,6 +200,68 @@ li {
     list-style: none;
 }
 
-@media(max-width:1000px) {
-    
+.mobile {
+    display:none;
+}
+
+.header-right .menu {
+    display:none;
+}
+
+@media(max-width:670px) {
+    header{
+        height:56px;
+    }
+
+    .header-logo {
+        height:56px;
+        width:120px;
+    }
+
+    header .header-right {
+        height:56px;
+        background-color:transparent;
+    }
+
+    .header-right .login {
+        display:none;
+    }
+
+    .link-box a {
+        font-size:8px;
+    }
+
+    .link-box span {
+        font-size:80px;
+        margin-left:10px;
+    }
+
+    .mobile {
+        display:inline;
+    }
+
+    .header-right .menu {
+        display: inline-block;
+    }
+
+    h2 {
+        font-size:22px;
+    }
+
+    .footer-left {
+        margin:0 10px;
+    }
+
+    .footer-left a {
+        font-size:35px;
+
+    }
+
+    .footer-right {
+        margin:10px;
+    }
+
+    li {
+    text-align: center;
+    }
 }
