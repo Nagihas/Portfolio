@@ -91,6 +91,7 @@ h1 {
     display:inline-block;
     opacity:0.85;
     border-radius:10px;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -181,11 +182,13 @@ footer {
 .footer-left {
     float:left;
     margin:10px 30px;
+    
 }
 
 .footer-left a{
     font-size:50px;
     color:white;
+    text-decoration: none;
 }
 
 .footer-right {
