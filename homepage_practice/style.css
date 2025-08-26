@@ -62,7 +62,7 @@ header::after {
 
 .top-wrapper {
     padding:180px 0px 180px 0px;
-    background-image:url('../images/ws2.png');
+    background-image:url('./images/ws2.png');
     background-size:cover;
     color:white;
     text-align:center;
